@@ -1,0 +1,131 @@
+/* Desenvolva sua estilização aqui ... */
+
+/*Estilização do header*/
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+
+.header__h1 {
+    color: var(--color-title-1);
+    font-size: var(--font-1);
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    border-radius: var(--radius-1);
+    padding: 0.625rem;
+    background-color: var(--background-color-buttons);
+    color: var(--color-tiltle2);
+    font-size: var(--font-3);
+}
+
+button:hover {
+    background-color: var(--background-color-buttons-hover);
+}
+
+/*Estilizando section de controle do filtro*/
+.container__controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--color-tiltle2);
+    font-size: var(--font-2);
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+}
+
+.music__genres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 1.875rem;
+}
+
+.button__music--generes:focus {
+    background-color: var(--background-color-buttons-focus);
+    color: var(--color-text-focus);
+    border: 1px solid var(--color-boder);
+}
+
+.container__controls--filter {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: var(--font-3);
+    color: var(--color-tiltle2);
+    margin-bottom: 6.25rem;
+}
+
+input {
+    margin-top: 1.25rem;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+}
+
+/*Estilizando cards*/
+
+.container__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.card {
+    width: 45%;
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: var(--background-color-card);
+    border-radius: var(--radius-1);
+    position: relative;
+}
+
+.card:hover {
+    background-color: var(--background-color-buttons);
+}
+
+.image__card {
+    width: 100%;
+    height: 50%;
+    border-radius: var(--radius-1) var(--radius-1) 0 0;
+}
+
+.information__product {
+    color: var(--color-text-2);
+    font-size: var(--font-3);
+    margin: 0.5rem 0rem 0rem 0.625rem;
+}
+
+.title__product {
+    color: var(--color-tiltle2);
+    font-size: var(--font-2);
+    font-weight: bold;
+    margin: 1.5rem 0rem 1.5rem 0.625rem;
+}
+
+.conteiner__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text__price {
+    color: var(--color-tiltle2);
+    font-size: var(--font-3);
+    font-weight: bold;
+    margin-left: 0.625rem;
+}
+
+.conteiner__button {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}

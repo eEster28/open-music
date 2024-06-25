@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <!-- SCRIPTS  -->
+    <script  src="/src/scripts/index.js" type="module" defer></script>
+  </head>
+  <body>
+  
+    <header class="container__header">
+      <h1 class="header__h1">open music</h1>
+      <button class="header__button"><img class="image__header" src="/src/assets/img/moon.svg" alt="botão de lua"></button>
+    </header>
+    <main>
+      <section class="container__controls">
+        <div class="container__controls--genres">
+          <h2 class="title genre">Gênero Musical</h2>
+          <ul class="music__genres"></ul>  
+        </div>
+
+         <div class="container__controls--filter">
+          <h2 class="title">Definir Preço</h2>
+          <p class="filter__paragraph">Até R$ 100</p>
+          <input type="range" id="rangeInput" min="0" max="100" step="1" value="100">
+        </div>
+      </section>
+
+      <section class="container__controls--card">
+       <h2 class="title">Albuns Encontrados</h2>
+       <ul class="container__card">
+       
+       </ul>
+      </section>
+    </main>
+  </body>
+</html>
